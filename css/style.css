@@ -594,6 +594,7 @@ hr {
     position: absolute;
     bottom: 0;
     width: 100%;
+    z-index: 1;
     padding: 50px 28px 28px;
     background: linear-gradient(0deg, #000000 43.83%, rgba(0, 0, 0, 0.490196) 69.65%, rgba(0, 0, 0, 0) 93.51%);
     transition: all 0.3s ease;
@@ -1001,6 +1002,12 @@ hr {
         height: 100%;
     }
     /* topic cards ends */
+    /* video section */
+    .video-big .video-overlay {
+        padding: 30px 15px 15px;
+        background: linear-gradient(0deg, #000000 5%, rgba(0, 0, 0, 0) 100%);
+    }
+    /* video section ends */
     /* world news */
     .world-news-wrapper .world-text {
         padding: 20px 30px;
