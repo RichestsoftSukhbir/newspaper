@@ -27,6 +27,21 @@ function headerTop() {
     menu.style.top = (headerHeight + 1) + "px";
 }
 
+// nav active toggler
+let url = window.location.pathname;
+let menuItems = document.querySelectorAll(".menu-list a");
+
+menuItems.forEach(function(element) {
+    if (url == element.pathname) {
+        element.classList.add("active");
+    } else {
+        element.classList.remove("active");
+    }
+    if (url == "" || url == "/") {
+        document.querySelector(".menu-list:nth-child(1) a").classList.add("active");
+    }
+});
+
 var textswiper = new Swiper(".text-slider", {
     allowTouchMove: false,
     spaceBetween: 40,
