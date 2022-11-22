@@ -981,6 +981,9 @@ hr {
     .container {
         max-width: 1170px;
     }
+    .world-news-wrapper .world-image {
+        height: 400px;
+    }
 }
 
 @media (max-width: 1200px) {
