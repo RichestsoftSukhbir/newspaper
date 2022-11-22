@@ -31,11 +31,13 @@ var textswiper = new Swiper(".text-slider", {
     allowTouchMove: false,
     spaceBetween: 40,
     effect: "slide",
+    loop: true
 });
 var imageswiper = new Swiper(".image-slider", {
     speed: 1000,
     spaceBetween: 10,
     grabCursor: true,
+    loop: true,
     navigation: {
         nextEl: '.news-next',
         prevEl: '.news-prev',
