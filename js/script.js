@@ -90,3 +90,10 @@ var sponserswiper = new Swiper(".sponser-slider", {
         },
     },
 });
+
+// infinite slide js
+$(function() {
+    $('.news').infiniteslide({
+        speed: 50
+    });
+});
