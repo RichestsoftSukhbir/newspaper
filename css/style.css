@@ -1122,12 +1122,13 @@ hr {
     position: relative;
     max-height: 150px;
     overflow: hidden;
-    transition: all 1s linear;
+    /* transition: all 1s ease; */
 }
 .vfw-text.expanded {
-    max-height: 999px;
+    max-height: 100%;
 }
 
+.read-less,
 .read-more {
     position: absolute;
     bottom: 0;
@@ -1139,9 +1140,20 @@ hr {
     background-image: linear-gradient(to bottom, transparent, black);
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease;
 }
 .vfw-text.expanded .read-more {
+    opacity: 0;
+    visibility: hidden;
+}
+.vfw-text.expanded .read-less {
+    opacity: 1;
+    visibility: visible;
+}
+.read-less {
+    position: relative;
+    padding-bottom: 0;
+    background-image: none;
     opacity: 0;
     visibility: hidden;
 }
@@ -1418,6 +1430,11 @@ hr {
     }
 
     /* about page ends */
+    /* resources page */
+    .read-less {
+        padding-top: 1rem;
+    }
+    /* resources page ends */
     /* sponsors page */
     .contact-for-ad .contact-ad-wrapper {
         padding: 30px;

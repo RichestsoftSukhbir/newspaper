@@ -100,10 +100,14 @@ $(function () {
 
 // resources read more functionality
 let readMore = document.querySelector(".read-more");
+let readLess = document.querySelector(".read-less");
 let readMoreHeight = readMore.clientHeight;
 
 let vfwText = document.querySelector(".vfw-text");
 
 readMore.addEventListener("click", function() {
+    vfwText.classList.toggle("expanded");
+});
+readLess.addEventListener("click", function() {
     vfwText.classList.toggle("expanded");
 });
