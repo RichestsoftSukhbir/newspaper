@@ -1,6 +1,6 @@
 // top nav today
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-document.querySelector(".day").innerHTML  = new Date().toLocaleDateString("en-US", options);
+document.querySelector(".day").innerHTML = new Date().toLocaleDateString("en-US", options);
 
 // year
 document.querySelector(".year").innerHTML = new Date().getFullYear();
@@ -31,7 +31,7 @@ function headerTop() {
 let url = window.location.pathname;
 let menuItems = document.querySelectorAll(".menu-list a");
 
-menuItems.forEach(function(element) {
+menuItems.forEach(function (element) {
     if (url == element.pathname) {
         element.classList.add("active");
     } else {
@@ -91,9 +91,19 @@ var sponserswiper = new Swiper(".sponser-slider", {
     },
 });
 
-// infinite slide js
-$(function() {
+$(function () {
+    // infinite slide js
     $('.news').infiniteslide({
         speed: 50
     });
+});
+
+// resources read more functionality
+let readMore = document.querySelector(".read-more");
+let readMoreHeight = readMore.clientHeight;
+
+let vfwText = document.querySelector(".vfw-text");
+
+readMore.addEventListener("click", function() {
+    vfwText.classList.toggle("expanded");
 });
