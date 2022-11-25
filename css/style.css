@@ -342,6 +342,7 @@ hr {
 }
 
 .navigation {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -369,6 +370,108 @@ hr {
     display: flex;
     gap: 30px;
 }
+
+/* search area in navbar */
+/* .item-right .search-input {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 450px;
+    transform: translateY(-50%);
+}
+.search-form.active .search-area {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.search-form {
+    position: relative;
+}
+.search-area {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--whiteps);
+    transition: all 0.3s ease;
+}
+.search-area:focus {
+    color: var(--blackps);
+    background-color: var(--whiteps);
+}
+.search-button {
+    position: relative;
+    z-index: 1;
+    color: var(--whiteps);
+    border: none;
+    background-color: transparent;
+}
+.search-form.active .search-button {
+    border: none;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 50px -10px var(--primary-color);
+} */
+
+.search-toggler {
+    cursor: pointer;
+}
+
+.item-right .search-form.active {
+    padding: 20px;
+    height: 80px;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+}
+.item-right .search-form {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    padding: 0;
+    background-color: var(--blackps);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: none;
+    border-bottom: 1px solid var(--primary-color);
+    transition: all 0.3s ease;
+
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.search-input {
+    position: relative;
+}
+.search-input .search-area {
+    padding-right: 40px;
+    padding-left: 10px;
+    border-radius: 0 !important;
+    color: var(--blackps);
+    background-color: var(--whiteps);
+}
+.search-input .search-button {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* border-radius: 50%; */
+    font-size: 14px;
+    border: none;
+    color: var(--whiteps);
+    background-color: var(--primary-color);
+}
+/* search area in navbar ends */
 
 .hamburger {
     display: none;

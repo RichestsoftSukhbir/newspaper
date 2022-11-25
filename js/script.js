@@ -26,6 +26,13 @@ function headerTop() {
     let headerHeight = header.clientHeight;
     menu.style.top = (headerHeight + 1) + "px";
 }
+// search toggler
+let searchToggler = document.querySelector('.search-toggler');
+let searchForm = document.querySelector('.search-form');
+
+searchToggler.addEventListener("click", function() {
+    searchForm.classList.toggle("active");
+});
 
 // nav active toggler
 let url = window.location.pathname;
