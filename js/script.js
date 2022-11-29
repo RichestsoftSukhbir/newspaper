@@ -30,7 +30,7 @@ function headerTop() {
 let searchToggler = document.querySelector('.search-toggler');
 let searchForm = document.querySelector('.search-form');
 
-searchToggler.addEventListener("click", function() {
+searchToggler.addEventListener("click", function () {
     searchForm.classList.toggle("active");
 });
 
@@ -82,7 +82,7 @@ var sponserswiper = new Swiper(".sponser-slider", {
     spaceBetween: 10,
     loop: true,
     breakpoints: {
-        640: {
+        320: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -106,15 +106,16 @@ $(function () {
 });
 
 // resources read more functionality
-let readMore = document.querySelector(".read-more");
-let readLess = document.querySelector(".read-less");
-let readMoreHeight = readMore.clientHeight;
+if (document.querySelector(".read-more")) {
+    let readMore = document.querySelector(".read-more");
+    let readLess = document.querySelector(".read-less");
 
-let vfwText = document.querySelector(".vfw-text");
+    let vfwText = document.querySelector(".vfw-text");
 
-readMore.addEventListener("click", function() {
-    vfwText.classList.toggle("expanded");
-});
-readLess.addEventListener("click", function() {
-    vfwText.classList.toggle("expanded");
-});
+    readMore.addEventListener("click", function () {
+        vfwText.classList.toggle("expanded");
+    });
+    readLess.addEventListener("click", function () {
+        vfwText.classList.toggle("expanded");
+    });
+}

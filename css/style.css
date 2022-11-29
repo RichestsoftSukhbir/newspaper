@@ -33,7 +33,7 @@ body {
     color: var(--whiteps);
     background-color: var(--blackps);
     font-family: 'Poppins', sans-serif;
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -431,6 +431,7 @@ hr {
     opacity: 1;
     visibility: visible;
 }
+
 .item-right .search-form {
     position: absolute;
     top: 100%;
@@ -449,9 +450,11 @@ hr {
     visibility: hidden;
     overflow: hidden;
 }
+
 .search-input {
     position: relative;
 }
+
 .search-input .search-area {
     padding-right: 40px;
     padding-left: 10px;
@@ -459,6 +462,7 @@ hr {
     color: var(--blackps);
     background-color: var(--whiteps);
 }
+
 .search-input .search-button {
     height: 30px;
     width: 30px;
@@ -471,6 +475,7 @@ hr {
     color: var(--whiteps);
     background-color: var(--primary-color);
 }
+
 /* search area in navbar ends */
 
 .hamburger {
@@ -1091,6 +1096,87 @@ hr {
 
 /* more news ends */
 /* intel page ends */
+/* intel description page */
+.credit-wrapper .credit-author,
+.intel-text p {
+    color: var(--black-color-40);
+}
+
+.intel-text p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.intel-text a {
+    color: var(--black-color-40);
+    text-decoration: underline;
+}
+
+.intel-text a:hover {
+    color: var(--primary-color);
+}
+
+.credit-wrapper {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.credit-wrapper .credit-text {
+    font-style: italic;
+}
+
+.badge-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bagde {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.bagde a {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 2px 10px;
+    background-color: var(--primary-color);
+}
+
+.bagde a:hover {
+    color: var(--whiteps);
+    background-color: var(--primary-color-dark);
+}
+
+.wrapper-copy {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.wrapper-copy .copy-link {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 16px;
+    color: #344054;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: var(--whiteps);
+}
+
+.wrapper-copy .copy-link i {
+    rotate: 90deg;
+}
+
+/* intel description page ends */
 /* about page */
 .about-socials {
     display: flex;
@@ -1227,6 +1313,7 @@ hr {
     overflow: hidden;
     /* transition: all 1s ease; */
 }
+
 .vfw-text.expanded {
     max-height: 100%;
 }
@@ -1245,14 +1332,17 @@ hr {
     visibility: visible;
     transition: all 0.3s ease;
 }
+
 .vfw-text.expanded .read-more {
     opacity: 0;
     visibility: hidden;
 }
+
 .vfw-text.expanded .read-less {
     opacity: 1;
     visibility: visible;
 }
+
 .read-less {
     position: relative;
     padding-bottom: 0;
@@ -1260,11 +1350,13 @@ hr {
     opacity: 0;
     visibility: hidden;
 }
+
 /* resources page ends */
 /* sponsors page */
 .spnsr-card {
     height: 100%;
 }
+
 .spnsr-card img {
     width: 100%;
     border-radius: 20px;
@@ -1274,8 +1366,9 @@ hr {
 .contact-for-ad .contact-ad-wrapper {
     padding: 30px 89.5px;
     border-radius: 20px;
-    border: 1px solid rgba(255,255,255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 /* sponsors page ends */
 /* media query */
 @media (min-width: 1200px) {
@@ -1514,6 +1607,7 @@ hr {
     .keep-form {
         padding: 40px 70px;
     }
+
     /* keep form ends */
     /* footer */
     .footer-row .footer-col {
@@ -1526,6 +1620,12 @@ hr {
     }
 
     /* footer ends */
+    /* intel description page */
+    .credit-wrapper .credit-text {
+        line-height: 28px;
+        font-size: 18px;
+    }
+    /* intel description page ends */
     /* about page */
     /* yt video section */
     .yt-video iframe {
@@ -1537,14 +1637,17 @@ hr {
     .read-less {
         padding-top: 1rem;
     }
+
     /* resources page ends */
     /* sponsors page */
     .contact-for-ad .contact-ad-wrapper {
         padding: 30px;
     }
+
     .contact-ad-wrapper .col-lg-3 img {
         height: 170px;
     }
+
     /* sponsors page ends */
 }
 
@@ -1697,10 +1800,18 @@ hr {
     }
 
     /* intel page ends */
+    /* intel description */
+    .badge-share {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* intel description ends */
     /* sponsors page */
     .contact-for-ad .contact-ad-wrapper {
         padding: 20px 15px;
     }
+
     /* sponsors page ends */
 }
 
